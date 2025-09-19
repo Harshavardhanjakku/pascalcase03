@@ -88,7 +88,7 @@ export default async function ProductDetail({ params }: Params) {
               </p>
               <a
                 href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.autocloser?tab=DetailsAndSupport"
-                className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
+                className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
               >
                 <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
                 Download from Microsoft AppSource
@@ -189,7 +189,7 @@ export default async function ProductDetail({ params }: Params) {
                   </div>
                   <a
                     href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=AIAutocloser%20Demo"
-                    className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:from-purple-700 hover:to-indigo-700"
+                    className="inline-flex items-center justify-center rounded-lg bg-blue-600/90 px-5 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
                   >
                     <ArrowTopRightOnSquareIcon className="mr-2 h-5 w-5" />
                     Book a Call or Demo
@@ -236,7 +236,7 @@ export default async function ProductDetail({ params }: Params) {
         <div className="mt-8 flex w-full justify-center">
           <a
             href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.autocloser?tab=DetailsAndSupport"
-            className="rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 px-6 py-3 font-semibold text-white transition-colors hover:from-purple-700 hover:to-indigo-700"
+            className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
           >
             Download from Microsoft AppSource
           </a>
@@ -291,7 +291,7 @@ export default async function ProductDetail({ params }: Params) {
 
             <a
               href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.datamask?tab=Overview"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
               Download from Microsoft AppSource
@@ -404,7 +404,7 @@ export default async function ProductDetail({ params }: Params) {
           <div className="flex w-full justify-center">
             <a
               href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=DataMask%20Demo"
-              className="rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white transition-colors hover:from-blue-700 hover:to-indigo-700"
+              className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               Book a Call or Demo
             </a>
@@ -828,7 +828,7 @@ export default async function ProductDetail({ params }: Params) {
             </p>
             <a
               href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.commission365?tab=Overview"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
               Download from Microsoft AppSource
@@ -900,7 +900,7 @@ export default async function ProductDetail({ params }: Params) {
                 </p>
                 <a
                   href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=Commission365%20Demo"
-                  className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:from-purple-700 hover:to-indigo-700"
+                  className="inline-flex items-center justify-center rounded-lg bg-blue-600/90 px-5 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
                 >
                   <ArrowTopRightOnSquareIcon className="mr-2 h-5 w-5" />
                   Book a Call or Demo
@@ -938,7 +938,7 @@ export default async function ProductDetail({ params }: Params) {
           <div className="flex w-full justify-center">
             <a
               href="https://appsource.microsoft.com/en/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.commission365?tab=Overview"
-              className="rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white transition-colors hover:from-blue-700 hover:to-indigo-700"
+              className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               Download for Free!
             </a>
@@ -993,7 +993,7 @@ export default async function ProductDetail({ params }: Params) {
             </p>
             <a
               href="https://appsource.microsoft.com/en-us/product/web-apps/pascalcasesoftwareprivatelimited1662384934323.flowmonitor?ocid=GTMRewards_WhatsNewBlog_flowmonitor_08012024"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-purple-700 hover:shadow-xl"
+              className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
               Download from Microsoft AppSource
@@ -1107,7 +1107,7 @@ export default async function ProductDetail({ params }: Params) {
           <div className="flex w-full justify-center">
             <a
               href="https://appsource.microsoft.com/en-us/product/web-apps/pascalcasesoftwareprivatelimited1662384934323.flowmonitor?ocid=GTMRewards_WhatsNewBlog_flowmonitor_08012024"
-              className="rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white transition-colors hover:from-blue-700 hover:to-indigo-700"
+              className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
             >
               Download from Microsoft AppSource
             </a>

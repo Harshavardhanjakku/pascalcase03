@@ -232,7 +232,7 @@ export default function Navbar() {
                                       className="truncate text-xs"
                                       style={{ color: isDark ? '#94a3b8' : '#64748b' }}
                                     >
-                                      Click to learn more
+                                      Click to know more
                                     </span>
                                   </span>
                                 </a>
