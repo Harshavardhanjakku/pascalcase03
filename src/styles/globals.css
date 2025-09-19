@@ -680,7 +680,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent-2) 100%);
+  background-color: var(--primary);
   border: 2px solid transparent;
   color: var(--primary-foreground);
   font-weight: 700;
