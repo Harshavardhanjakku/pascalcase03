@@ -255,25 +255,6 @@ export default function ContactSection() {
 
           {/* Message */}
           <div className="relative">
-            <span
-              className="pointer-events-none absolute top-3 left-3 z-10"
-              style={{ color: 'var(--text-secondary)' }}
-            >
-              {/* message icon */}
-              <svg
-                aria-hidden="true"
-                className="h-4 w-4"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21 12a8 8 0 0 1-11.8 7L3 20l1-6A8 8 0 1 1 21 12Z"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                />
-              </svg>
-            </span>
             <textarea
               id={`${formId}-message`}
               name="message"
@@ -287,9 +268,31 @@ export default function ContactSection() {
               onChange={(e) => setField('message', e.target.value)}
               onBlur={() => setTouched((t) => ({ ...t, message: true }))}
               placeholder=" "
-              className={`${inputClasses(touched.message && Boolean(errors.message))} peer resize-vertical min-h-[120px] pl-9`}
+              className={`${inputClasses(touched.message && Boolean(errors.message))} peer resize-vertical min-h-[120px]`}
             />
-            <label htmlFor={`${formId}-message`} className="form-label">
+            <label
+              htmlFor={`${formId}-message`}
+              className="form-label inline-flex items-center gap-2"
+            >
+              <span
+                aria-hidden
+                className="inline-flex items-center"
+                style={{ color: 'var(--text-secondary)' }}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 12a8 8 0 0 1-11.8 7L3 20l1-6A8 8 0 1 1 21 12Z"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  />
+                </svg>
+              </span>
               Message
             </label>
             {helperText('message')}
@@ -301,7 +304,7 @@ export default function ContactSection() {
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.99 }}
             disabled={submitting}
-            className="form-submit"
+            className="form-submit mb-4"
             aria-busy={submitting}
           >
             {submitting ? 'Sending…' : 'Send Message'}
@@ -341,7 +344,7 @@ export default function ContactSection() {
         </form>
 
         {/* Extra Contact Info - icon buttons */}
-        <div className="mt-6 flex flex-wrap items-center gap-3">
+        <div className="mt-0 flex flex-wrap items-center gap-3">
           <a
             href="mailto:support@pascalcase.com"
             className="contact-icon"
