@@ -44,7 +44,7 @@ export default async function Home() {
         className="mx-auto mt-8 max-w-7xl scroll-mt-24 px-4 sm:px-6 md:scroll-mt-28"
       >
         <BlogSlider posts={posts} />
-        <div className="mt-6 flex justify-end">
+        <div className="mt-6 flex justify-center">
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 rounded-md border px-4 py-2 text-sm transition-colors hover:opacity-80"
