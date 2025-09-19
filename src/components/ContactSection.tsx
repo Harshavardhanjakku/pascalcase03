@@ -75,12 +75,12 @@ export default function ContactSection() {
     `form-input ${invalid ? 'border-red-400/60 ring-red-400/60' : ''}`;
 
   return (
-    <section aria-labelledby="contact-heading" className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
+    <section aria-labelledby="contact-heading" className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
       {/* Single outer card */}
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.25 }}
         transition={{ type: 'spring', stiffness: 260, damping: 26 }}
         className="contact-form mx-auto max-w-3xl"
       >

@@ -19,11 +19,11 @@ export default async function Home() {
       <ModulesSection />
       <section
         id="why"
-        className="mx-auto mt-4 max-w-7xl scroll-mt-24 px-4 sm:px-6 md:scroll-mt-28"
+        className="mx-auto mt-8 max-w-7xl scroll-mt-24 px-4 sm:px-6 md:scroll-mt-28"
       >
         <HeroIntro />
       </section>
-      <section id="features" className="mx-auto mt-6 max-w-7xl px-4 sm:px-6">
+      <section id="features" className="mx-auto mt-8 max-w-7xl px-4 sm:px-6">
         <FeatureGrid />
         <div className="mt-6 flex justify-end">
           <Link
@@ -41,7 +41,7 @@ export default async function Home() {
       </section>
       <section
         id="blog"
-        className="mx-auto mt-12 max-w-7xl scroll-mt-24 px-4 sm:px-6 md:scroll-mt-28"
+        className="mx-auto mt-8 max-w-7xl scroll-mt-24 px-4 sm:px-6 md:scroll-mt-28"
       >
         <BlogSlider posts={posts} />
         <div className="mt-6 flex justify-end">

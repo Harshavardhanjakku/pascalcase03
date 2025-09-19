@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 export default function CustomersSection() {
   return (
     <section
-      className="py-16 sm:py-20 lg:py-24"
+      className="pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-16"
       style={{ background: 'linear-gradient(to bottom, var(--surface-1), transparent)' }}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -14,13 +14,10 @@ export default function CustomersSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: false }}
+          viewport={{ once: false, amount: 0.25 }}
           className="text-center"
         >
-          <h2
-            className="text-3xl font-bold tracking-tight sm:text-4xl"
-            style={{ color: 'var(--text-primary)' }}
-          >
+          <h2 className="section-title" style={{ color: 'var(--text-primary)' }}>
             Our Customers
           </h2>
           <p className="mt-4 text-lg" style={{ color: 'var(--text-secondary)' }}>
@@ -33,8 +30,8 @@ export default function CustomersSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: false }}
-          className="mt-12 flex justify-center"
+          viewport={{ once: false, amount: 0.25 }}
+          className="mt-8 flex justify-center"
         >
           <div className="relative w-full max-w-4xl">
             <Image

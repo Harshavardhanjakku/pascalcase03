@@ -19,8 +19,7 @@ const modules = [
   {
     icon: CogIcon,
     title: 'Field Service',
-    description:
-      'Bring customer service capabilities to customer locations.',
+    description: 'Bring customer service capabilities to customer locations.',
   },
   {
     icon: ChartBarIcon,
@@ -33,7 +32,7 @@ const modules = [
 export default function ModulesSection() {
   return (
     <section
-      className="pt-10 pb-16 sm:pt-12 sm:pb-20 lg:pt-14 lg:pb-24"
+      className="pt-8 pb-14 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-16"
       style={{ background: 'linear-gradient(to bottom, var(--surface-1), transparent)' }}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -41,7 +40,7 @@ export default function ModulesSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: false }}
+          viewport={{ once: false, amount: 0.25 }}
           className="section-header"
         >
           <h2 className="section-title">
@@ -57,7 +56,7 @@ export default function ModulesSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: false }}
+          viewport={{ once: false, amount: 0.25 }}
           className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8"
         >
           {modules.map((module, index) => {
