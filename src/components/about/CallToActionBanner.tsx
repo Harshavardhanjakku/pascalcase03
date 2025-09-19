@@ -12,13 +12,15 @@ export default function CallToActionBanner() {
           <div className="flex gap-3">
             <Link
               href="#"
-              className="rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-2.5 font-medium text-white hover:from-blue-700 hover:to-indigo-700"
+              className="rounded-full px-5 py-2.5 font-medium text-white"
+              style={{ backgroundColor: 'var(--primary)' }}
             >
               Chat on Microsoft Teams
             </Link>
             <Link
               href="/contact"
-              className="rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-2.5 font-medium text-white hover:from-blue-700 hover:to-indigo-700"
+              className="rounded-full px-5 py-2.5 font-medium text-white"
+              style={{ backgroundColor: 'var(--primary)' }}
             >
               Get in Touch
             </Link>

@@ -48,13 +48,17 @@ export default async function BlogDetail({ params }: Params) {
               </div>
             </div>
             <div className="text-text-muted flex flex-wrap items-center gap-2 text-sm">
-              <span className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-2 py-0.5 font-medium text-white">
+              <span
+                className="inline-flex items-center rounded-full px-2 py-0.5 font-medium text-white"
+                style={{ backgroundColor: 'var(--primary)' }}
+              >
                 {post.category}
               </span>
               {post.tags?.map((t) => (
                 <span
                   key={t}
-                  className="inline-flex items-center rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 px-2 py-0.5 font-medium text-white"
+                  className="inline-flex items-center rounded-full px-2 py-0.5 font-medium text-white"
+                  style={{ backgroundColor: 'var(--primary)' }}
                 >
                   #{t}
                 </span>

@@ -42,10 +42,10 @@ export default function Hero() {
               <Link
                 href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=Website%20Inquiry"
                 aria-label="Chat on Microsoft Teams"
-                className="inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                className="inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
                 style={{
-                  backgroundColor: 'var(--color-brand)',
-                  color: 'var(--color-brand-foreground)',
+                  backgroundColor: 'var(--primary)',
+                  color: 'var(--primary-foreground)',
                 }}
               >
                 Chat on Microsoft Teams
@@ -78,10 +78,10 @@ export default function Hero() {
                       <Link
                         href="https://microsoftedge.microsoft.com/addons/detail/metadata-browser-for-dyna/fdfelmicclblfanogpnejdogjjildbkf?hl=en-GB"
                         target="_blank"
-                        className={bandCtaClass}
+                        className={`${bandCtaClass} text-white`}
                         style={{
-                          backgroundColor: 'var(--color-brand)',
-                          color: 'var(--color-brand-foreground)',
+                          backgroundColor: 'var(--primary)',
+                          color: 'var(--primary-foreground)',
                         }}
                       >
                         Download for Microsoft Edge
@@ -113,10 +113,10 @@ export default function Hero() {
                       <Link
                         href="/products/commission-365"
                         target="_blank"
-                        className={bandCtaClass}
+                        className={`${bandCtaClass} text-white`}
                         style={{
-                          backgroundColor: 'var(--color-brand)',
-                          color: 'var(--color-brand-foreground)',
+                          backgroundColor: 'var(--primary)',
+                          color: 'var(--primary-foreground)',
                         }}
                       >
                         More Info
@@ -124,10 +124,10 @@ export default function Hero() {
                       <Link
                         href="https://appsource.microsoft.com/en/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.commission365?tab=Overview"
                         target="_blank"
-                        className={bandCtaClass}
+                        className={`${bandCtaClass} text-white`}
                         style={{
-                          backgroundColor: 'var(--color-brand)',
-                          color: 'var(--color-brand-foreground)',
+                          backgroundColor: 'var(--primary)',
+                          color: 'var(--primary-foreground)',
                         }}
                       >
                         Download from Microsoft AppSource
@@ -158,10 +158,10 @@ export default function Hero() {
                       <Link
                         href="/products/ai-autocloser"
                         target="_blank"
-                        className={bandCtaClass}
+                        className={`${bandCtaClass} text-white`}
                         style={{
-                          backgroundColor: 'var(--color-brand)',
-                          color: 'var(--color-brand-foreground)',
+                          backgroundColor: 'var(--primary)',
+                          color: 'var(--primary-foreground)',
                         }}
                       >
                         More Info
@@ -169,10 +169,10 @@ export default function Hero() {
                       <Link
                         href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.autocloser?tab=DetailsAndSupport"
                         target="_blank"
-                        className={bandCtaClass}
+                        className={`${bandCtaClass} text-white`}
                         style={{
-                          backgroundColor: 'var(--color-brand)',
-                          color: 'var(--color-brand-foreground)',
+                          backgroundColor: 'var(--primary)',
+                          color: 'var(--primary-foreground)',
                         }}
                       >
                         Download from Microsoft AppSource
@@ -202,7 +202,7 @@ export default function Hero() {
                       <Link
                         href="/products/flow-monitor"
                         target="_blank"
-                        className={bandCtaClass}
+                        className={`${bandCtaClass} text-white`}
                         style={{
                           backgroundColor: 'var(--color-brand)',
                           color: 'var(--color-brand-foreground)',

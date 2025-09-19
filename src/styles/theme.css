@@ -133,7 +133,7 @@
   --border-subtle: rgba(15, 23, 42, 0.12);
   --border-default: rgba(15, 23, 42, 0.2);
   --border-strong: rgba(15, 23, 42, 0.4);
-  --ring: #2563eb;
+  --ring: #6eacda;
   --text-100: #0f172a;
   --text-muted: #475569;
   --muted: #475569;
@@ -141,7 +141,9 @@
   --text-secondary: #475569;
   --text-inverse: #ffffff;
   --accent: #ea580c;
-  --accent-2: #2563eb;
+  --accent-2: #6eacda;
+  --primary: #6eacda;
+  --primary-foreground: #ffffff;
   --glass-1: rgba(15, 23, 42, 0.08);
   --glass-2: rgba(15, 23, 42, 0.12);
   --overlay-1: var(--glass-1);
@@ -179,8 +181,8 @@
   --border-subtle: rgba(15, 23, 42, 0.12);
   --border-default: rgba(15, 23, 42, 0.2);
   --border-strong: rgba(15, 23, 42, 0.4);
-  --ring: #2563eb;
-  /* blue-600 - better focus visibility */
+  --ring: #6eacda;
+  /* custom light primary - better focus visibility */
 
   /* Text - Enhanced contrast for WCAG compliance */
   --text-100: #0f172a;
@@ -198,8 +200,10 @@
   /* Accent palette - Enhanced for light mode */
   --accent: #ea580c;
   /* orange-600 - better contrast than amber */
-  --accent-2: #2563eb;
-  /* blue-600 - better contrast */
+  --accent-2: #6eacda;
+  /* light theme primary */
+  --primary: #6eacda;
+  --primary-foreground: #ffffff;
 
   /* Glassmorphism overlays - Enhanced for light mode */
   --glass-1: rgba(15, 23, 42, 0.08);

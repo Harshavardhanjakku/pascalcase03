@@ -88,7 +88,8 @@ export default async function ProductDetail({ params }: Params) {
               </p>
               <a
                 href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.autocloser?tab=DetailsAndSupport"
-                className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+                className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+                style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
               >
                 <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
                 Download from Microsoft AppSource
@@ -189,7 +190,8 @@ export default async function ProductDetail({ params }: Params) {
                   </div>
                   <a
                     href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=AIAutocloser%20Demo"
-                    className="inline-flex items-center justify-center rounded-lg bg-blue-600/90 px-5 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
+                    className="inline-flex items-center justify-center rounded-lg px-5 py-3 font-semibold text-white transition-colors dark:bg-blue-600 dark:hover:bg-blue-700"
+                    style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
                   >
                     <ArrowTopRightOnSquareIcon className="mr-2 h-5 w-5" />
                     Book a Call or Demo
@@ -236,7 +238,8 @@ export default async function ProductDetail({ params }: Params) {
         <div className="mt-8 flex w-full justify-center">
           <a
             href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.autocloser?tab=DetailsAndSupport"
-            className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
+            className="rounded-lg px-6 py-3 font-semibold text-white transition-colors dark:bg-blue-600 dark:hover:bg-blue-700"
+            style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
           >
             Download from Microsoft AppSource
           </a>
@@ -291,7 +294,8 @@ export default async function ProductDetail({ params }: Params) {
 
             <a
               href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.datamask?tab=Overview"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+              className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+              style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
             >
               <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
               Download from Microsoft AppSource
@@ -339,8 +343,11 @@ export default async function ProductDetail({ params }: Params) {
                   }}
                 >
                   <div className="mb-2 flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30">
-                      <CheckCircleIcon className="h-5 w-5 text-blue-600" />
+                    <div
+                      className="flex h-8 w-8 items-center justify-center rounded-lg dark:bg-blue-900/30"
+                      style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)' }}
+                    >
+                      <CheckCircleIcon className="h-5 w-5" style={{ color: 'var(--primary)' }} />
                     </div>
                     <h3 className="font-semibold" style={{ color: 'var(--text-primary)' }}>
                       {item.title}
@@ -404,7 +411,8 @@ export default async function ProductDetail({ params }: Params) {
           <div className="flex w-full justify-center">
             <a
               href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=DataMask%20Demo"
-              className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
+              className="rounded-lg px-6 py-3 font-semibold text-white transition-colors dark:bg-blue-600 dark:hover:bg-blue-700"
+              style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
             >
               Book a Call or Demo
             </a>
@@ -524,7 +532,8 @@ export default async function ProductDetail({ params }: Params) {
               href="https://learn.microsoft.com/en-us/connectors/htmltopdfconverter/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white transition-colors hover:bg-blue-700"
+              className="inline-flex items-center justify-center rounded-lg px-5 py-3 font-semibold text-white transition-colors"
+              style={{ backgroundColor: 'var(--primary)' }}
             >
               <ArrowTopRightOnSquareIcon className="mr-2 h-5 w-5" />
               Visit Microsoft Docs
@@ -569,8 +578,11 @@ export default async function ProductDetail({ params }: Params) {
                 }}
               >
                 <div className="mb-2 flex items-center gap-3">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30">
-                    <CheckCircleIcon className="h-5 w-5 text-blue-600" />
+                  <div
+                    className="flex h-8 w-8 items-center justify-center rounded-lg dark:bg-blue-900/30"
+                    style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)' }}
+                  >
+                    <CheckCircleIcon className="h-5 w-5" style={{ color: 'var(--primary)' }} />
                   </div>
                   <h3 className="font-semibold" style={{ color: 'var(--text-primary)' }}>
                     {item.title}
@@ -636,7 +648,8 @@ export default async function ProductDetail({ params }: Params) {
                 href="https://buy.stripe.com/dR6g269fm7BQbuMfZ1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:from-blue-700 hover:to-indigo-700"
+                className="mt-4 inline-flex items-center justify-center rounded-lg px-5 py-3 font-semibold text-white transition-colors"
+                style={{ backgroundColor: 'var(--primary)' }}
               >
                 <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
                 Purchase Using Stripe
@@ -828,7 +841,8 @@ export default async function ProductDetail({ params }: Params) {
             </p>
             <a
               href="https://appsource.microsoft.com/en-us/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.commission365?tab=Overview"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+              className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+              style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
             >
               <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
               Download from Microsoft AppSource
@@ -865,8 +879,11 @@ export default async function ProductDetail({ params }: Params) {
                   }}
                 >
                   <div className="mb-2 flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30">
-                      <CheckCircleIcon className="h-5 w-5 text-blue-600" />
+                    <div
+                      className="flex h-8 w-8 items-center justify-center rounded-lg dark:bg-blue-900/30"
+                      style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)' }}
+                    >
+                      <CheckCircleIcon className="h-5 w-5" style={{ color: 'var(--primary)' }} />
                     </div>
                     <h3 className="font-semibold" style={{ color: 'var(--text-primary)' }}>
                       {title}
@@ -900,7 +917,8 @@ export default async function ProductDetail({ params }: Params) {
                 </p>
                 <a
                   href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=Commission365%20Demo"
-                  className="inline-flex items-center justify-center rounded-lg bg-blue-600/90 px-5 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
+                  className="inline-flex items-center justify-center rounded-lg px-5 py-3 font-semibold text-white transition-colors dark:bg-blue-600 dark:hover:bg-blue-700"
+                  style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
                 >
                   <ArrowTopRightOnSquareIcon className="mr-2 h-5 w-5" />
                   Book a Call or Demo
@@ -938,7 +956,8 @@ export default async function ProductDetail({ params }: Params) {
           <div className="flex w-full justify-center">
             <a
               href="https://appsource.microsoft.com/en/product/dynamics-365/pascalcasesoftwareprivatelimited1662384934323.commission365?tab=Overview"
-              className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
+              className="rounded-lg px-6 py-3 font-semibold text-white transition-colors dark:bg-blue-600 dark:hover:bg-blue-700"
+              style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
             >
               Download for Free!
             </a>
@@ -993,7 +1012,8 @@ export default async function ProductDetail({ params }: Params) {
             </p>
             <a
               href="https://appsource.microsoft.com/en-us/product/web-apps/pascalcasesoftwareprivatelimited1662384934323.flowmonitor?ocid=GTMRewards_WhatsNewBlog_flowmonitor_08012024"
-              className="inline-flex w-full items-center justify-center rounded-xl bg-blue-600/90 px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-blue-700/90 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+              className="inline-flex w-full items-center justify-center rounded-xl px-6 py-4 font-semibold text-white shadow-lg transition-colors duration-300 hover:shadow-xl dark:bg-blue-600 dark:hover:bg-blue-700"
+              style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
             >
               <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
               Download from Microsoft AppSource
@@ -1029,8 +1049,11 @@ export default async function ProductDetail({ params }: Params) {
                   }}
                 >
                   <div className="mb-2 flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900/30">
-                      <CheckCircleIcon className="h-5 w-5 text-blue-600" />
+                    <div
+                      className="flex h-8 w-8 items-center justify-center rounded-lg dark:bg-blue-900/30"
+                      style={{ backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)' }}
+                    >
+                      <CheckCircleIcon className="h-5 w-5" style={{ color: 'var(--primary)' }} />
                     </div>
                     <h3 className="font-semibold" style={{ color: 'var(--text-primary)' }}>
                       {title}
@@ -1062,7 +1085,8 @@ export default async function ProductDetail({ params }: Params) {
                 </p>
                 <a
                   href="https://teams.microsoft.com/l/chat/0/0?users=satish@pascalcase.com,likitha@pascalcase.com&topicName=FlowMonitor%20Demo"
-                  className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-600 to-indigo-600 px-5 py-3 font-semibold text-white transition-colors hover:from-purple-700 hover:to-indigo-700"
+                  className="inline-flex items-center justify-center rounded-lg px-5 py-3 font-semibold text-white transition-colors"
+                  style={{ backgroundColor: 'var(--primary)' }}
                 >
                   <ArrowTopRightOnSquareIcon className="mr-2 h-5 w-5" />
                   Book a Call or Demo
@@ -1107,7 +1131,8 @@ export default async function ProductDetail({ params }: Params) {
           <div className="flex w-full justify-center">
             <a
               href="https://appsource.microsoft.com/en-us/product/web-apps/pascalcasesoftwareprivatelimited1662384934323.flowmonitor?ocid=GTMRewards_WhatsNewBlog_flowmonitor_08012024"
-              className="rounded-lg bg-blue-600/90 px-6 py-3 font-semibold text-white transition-colors hover:bg-blue-700/90 dark:bg-blue-600 dark:hover:bg-blue-700"
+              className="rounded-lg px-6 py-3 font-semibold text-white transition-colors dark:bg-blue-600 dark:hover:bg-blue-700"
+              style={{ backgroundColor: 'var(--primary)', opacity: 0.95 }}
             >
               Download from Microsoft AppSource
             </a>
@@ -1190,7 +1215,8 @@ export default async function ProductDetail({ params }: Params) {
                     href="https://microsoftedge.microsoft.com/addons/detail/metadata-browser-for-dyna/fdfelmicclblfanogpnejdogjjildbkf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 font-semibold text-white shadow transition-colors hover:from-blue-700 hover:to-indigo-700"
+                    className="inline-flex w-full items-center justify-center rounded-xl px-6 py-3 font-semibold text-white shadow transition-colors"
+                    style={{ backgroundColor: 'var(--primary)' }}
                   >
                     <ArrowDownTrayIcon className="mr-2 h-5 w-5" />
                     Download from Microsoft Edge
@@ -1232,7 +1258,8 @@ export default async function ProductDetail({ params }: Params) {
                   href="https://www.silwoodtechnology.com/products/safyr-for-microsoft-dynamics-365/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-3 font-semibold text-white transition-colors hover:from-blue-700 hover:to-indigo-700"
+                  className="inline-flex w-full items-center justify-center rounded-lg px-4 py-3 font-semibold text-white transition-colors"
+                  style={{ backgroundColor: 'var(--primary)' }}
                 >
                   <ArrowTopRightOnSquareIcon className="mr-2 h-5 w-5" />
                   Go to Silwood Technology website

@@ -77,7 +77,8 @@ export default function CareersPage() {
           </p>
           <a
             href="mailto:hr@pascalcase.com?subject=Job Application - [Position Title]"
-            className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-xl"
+            className="inline-flex items-center justify-center rounded-xl px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
+            style={{ backgroundColor: 'var(--primary)' }}
           >
             Apply Now
           </a>
@@ -163,7 +164,8 @@ function Job({ title, skills, experience, location }: JobProps) {
       <div className="mt-6 border-t pt-4" style={{ borderColor: 'var(--border-subtle)' }}>
         <a
           href={`mailto:hr@pascalcase.com?subject=Job Application - ${encodeURIComponent(title)}`}
-          className="inline-flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:from-blue-700 hover:to-indigo-700"
+          className="inline-flex w-full items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold text-white transition-colors"
+          style={{ backgroundColor: 'var(--primary)' }}
         >
           Apply for this Position
         </a>

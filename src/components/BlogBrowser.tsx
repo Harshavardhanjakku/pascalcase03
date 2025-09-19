@@ -109,7 +109,8 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="search topics"
-                  className="dark:ring-accent w-full rounded-md border border-slate-200/50 bg-slate-50/80 px-8 py-2 text-sm text-slate-900 ring-blue-500 placeholder:text-slate-500 focus:ring-2 focus:outline-none dark:border-white/20 dark:bg-white/10 dark:text-white dark:placeholder:text-slate-400"
+                  className="dark:ring-accent w-full rounded-md border border-slate-200/50 bg-slate-50/80 px-8 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:ring-2 focus:outline-none dark:border-white/20 dark:bg-white/10 dark:text-white dark:placeholder:text-slate-400"
+                  style={{ boxShadow: '0 0 0 0px transparent', outlineColor: 'var(--ring)' }}
                 />
                 <svg
                   className="pointer-events-none absolute top-1/2 left-2 h-4 w-4 -translate-y-1/2 text-slate-500 dark:text-slate-400"
@@ -139,14 +140,21 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                         type="button"
                         onClick={() => toggleTag(t)}
                         aria-pressed={selected}
-                        className={`flex items-center justify-between rounded-md px-2 py-1 text-sm transition-colors ${selected
-                          ? 'dark:bg-accent/20 bg-blue-100 text-blue-900 dark:text-white'
-                          : 'text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-white/10'
-                          }`}
+                        className={`flex items-center justify-between rounded-md px-2 py-1 text-sm transition-colors ${
+                          selected
+                            ? 'dark:bg-accent/20 text-blue-900 dark:text-white'
+                            : 'text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-white/10'
+                        }`}
+                        style={
+                          selected
+                            ? { backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)' }
+                            : undefined
+                        }
                       >
                         <span className="truncate">{t}</span>
                         <span
-                          className={`ml-3 rounded-full border px-1.5 py-0.5 text-[10px] ${selected ? 'dark:border-accent/60 border-blue-600' : 'border-slate-300 text-slate-500 dark:border-white/20 dark:text-slate-400'}`}
+                          className={`ml-3 rounded-full border px-1.5 py-0.5 text-[10px] ${selected ? 'dark:border-accent/60' : 'border-slate-300 text-slate-500 dark:border-white/20 dark:text-slate-400'}`}
+                          style={selected ? { borderColor: 'var(--primary)' } : undefined}
                         >
                           {count}
                         </span>
@@ -181,7 +189,8 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
-                  className="rounded-md bg-gradient-to-r from-blue-600 to-indigo-600 px-3 py-1.5 text-xs font-medium text-white hover:from-blue-700 hover:to-indigo-700"
+                  className="rounded-md px-3 py-1.5 text-xs font-medium text-white"
+                  style={{ backgroundColor: 'var(--primary)' }}
                 >
                   Done
                 </button>
@@ -200,10 +209,19 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                 type="button"
                 onClick={() => toggleTag(t)}
                 aria-pressed={selected}
-                className={`rounded-full border px-3 py-1 text-xs transition-colors ${selected
-                  ? 'dark:border-accent/60 dark:bg-accent/20 border-blue-600 bg-blue-100 text-blue-900 dark:text-white'
-                  : 'border-slate-200/50 bg-slate-100/80 text-slate-600 hover:bg-slate-200/80 dark:border-white/20 dark:bg-white/10 dark:text-slate-400 dark:hover:bg-white/15'
-                  }`}
+                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                  selected
+                    ? 'dark:border-accent/60 dark:bg-accent/20 text-blue-900 dark:text-white'
+                    : 'border-slate-200/50 bg-slate-100/80 text-slate-600 hover:bg-slate-200/80 dark:border-white/20 dark:bg-white/10 dark:text-slate-400 dark:hover:bg-white/15'
+                }`}
+                style={
+                  selected
+                    ? {
+                        borderColor: 'var(--primary)',
+                        backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)',
+                      }
+                    : undefined
+                }
               >
                 {t}
               </button>
