@@ -4,6 +4,7 @@ import { toBlogCardProps } from '@/lib/blog/types';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './blog.module.css';
 
 export const revalidate = 60;
 
@@ -37,7 +38,7 @@ export default async function BlogDetail({ params }: Params) {
       <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 xl:gap-24">
         <article className="lg:col-span-8 xl:col-span-8">
           <header className="mb-6 border-b border-slate-200 pb-4 dark:border-slate-700">
-            <h1 className="mb-4 text-3xl font-bold">{post.title}</h1>
+            <h1 className={`mb-4 text-3xl font-bold ${styles.clampedTitle}`}>{post.title}</h1>
             <div className="text-text-muted mb-3 flex items-center justify-between text-sm">
               <span>{post.author}</span>
               <div className="flex items-center gap-2">

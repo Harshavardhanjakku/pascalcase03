@@ -1,56 +1,67 @@
 .article img {
-    border: 1px solid var(--tw-prose-body, rgba(148, 163, 184, 0.4));
-    border-radius: 0.75rem;
-    /* match rounded-xl */
+  border: 1px solid var(--tw-prose-body, rgba(148, 163, 184, 0.4));
+  border-radius: 0.75rem;
+  /* match rounded-xl */
 }
 
-.article figure>img {
-    border: 1px solid var(--tw-prose-body, rgba(148, 163, 184, 0.4));
-    border-radius: 0.75rem;
+.article figure > img {
+  border: 1px solid var(--tw-prose-body, rgba(148, 163, 184, 0.4));
+  border-radius: 0.75rem;
 }
 
 .article figure {
-    padding: 0.25rem;
+  padding: 0.25rem;
 }
 
 /* FAQ overrides removed */
 
 /* Force visible sidebar text in light theme */
 :root :where(.sidebarLightForce) {
-    color: #0f172a !important;
-    /* slate-900 */
-    opacity: 1 !important;
-    filter: none !important;
-    mix-blend-mode: normal !important;
-    isolation: isolate !important;
+  color: #0f172a !important;
+  /* slate-900 */
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  isolation: isolate !important;
 }
 
-:root :where(.sidebarLightForce h3,
+:root
+  :where(
+    .sidebarLightForce h3,
     .sidebarLightForce a,
     .sidebarLightForce li,
-    .sidebarLightForce ul) {
-    color: #0f172a !important;
-    /* slate-900 */
-    opacity: 1 !important;
-    filter: none !important;
-    mix-blend-mode: normal !important;
+    .sidebarLightForce ul
+  ) {
+  color: #0f172a !important;
+  /* slate-900 */
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
 }
 
 :root :where(.sidebarLightForce li) {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 :root :where(.sidebarLightForce li::marker) {
-    color: #334155 !important;
-    /* slate-700 */
+  color: #334155 !important;
+  /* slate-700 */
 }
 
 /* Do not affect dark theme */
 @media (prefers-color-scheme: dark) {
-    :root :where(.sidebarLightForce) {
-        color: inherit !important;
-        opacity: inherit !important;
-        filter: inherit !important;
-        mix-blend-mode: inherit !important;
-    }
+  :root :where(.sidebarLightForce) {
+    color: inherit !important;
+    opacity: inherit !important;
+    filter: inherit !important;
+    mix-blend-mode: inherit !important;
+  }
+}
+
+/* Clamp blog title to 2 lines for consistent header height */
+.clampedTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

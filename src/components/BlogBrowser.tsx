@@ -79,18 +79,24 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
           <button
             type="button"
             onClick={() => setIsOpen((o) => !o)}
-            className="inline-flex items-center gap-2 rounded-md border border-slate-200/50 bg-slate-100/80 px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-200/80 dark:border-white/20 dark:bg-white/10 dark:text-slate-300 dark:hover:bg-white/15"
+            className="inline-flex items-center gap-2 rounded-md border px-3 py-1.5 text-sm transition-colors hover:opacity-90"
+            style={{
+              borderColor: 'var(--border-strong)',
+              backgroundColor: 'var(--surface-2)',
+              color: 'var(--text-primary)',
+            }}
             aria-haspopup="dialog"
             aria-expanded={isOpen}
           >
             <svg
-              className="h-5 w-5 text-gray-800 dark:text-white"
+              className="h-5 w-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
               fill="currentColor"
               viewBox="0 0 24 24"
+              style={{ color: 'var(--text-primary)' }}
             >
               <path d="M5.05 3C3.291 3 2.352 5.024 3.51 6.317l5.422 6.059v4.874c0 .472.227.917.613 1.2l3.069 2.25c1.01.742 2.454.036 2.454-1.2v-7.124l5.422-6.059C21.647 5.024 20.708 3 18.95 3H5.05Z" />
             </svg>
@@ -99,7 +105,12 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
 
           {isOpen && (
             <div
-              className="absolute z-20 mt-2 w-80 rounded-xl border border-slate-200/50 bg-white/95 p-3 shadow-xl backdrop-blur dark:border-white/20 dark:bg-slate-800/95"
+              className="absolute z-20 mt-2 w-80 rounded-xl border p-3 shadow-xl backdrop-blur"
+              style={{
+                borderColor: 'var(--border-strong)',
+                backgroundColor: 'var(--surface-2)',
+                color: 'var(--text-primary)',
+              }}
               role="dialog"
               aria-label="Filter by topics"
             >
@@ -109,15 +120,21 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="search topics"
-                  className="dark:ring-accent w-full rounded-md border border-slate-200/50 bg-slate-50/80 px-8 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:ring-2 focus:outline-none dark:border-white/20 dark:bg-white/10 dark:text-white dark:placeholder:text-slate-400"
-                  style={{ boxShadow: '0 0 0 0px transparent', outlineColor: 'var(--ring)' }}
+                  className="w-full rounded-md border px-8 py-2 text-sm focus:ring-2 focus:outline-none"
+                  style={{
+                    borderColor: 'var(--border-strong)',
+                    backgroundColor: 'var(--surface-input)',
+                    color: 'var(--text-primary)',
+                    boxShadow: '0 0 0 0px transparent',
+                  }}
                 />
                 <svg
-                  className="pointer-events-none absolute top-1/2 left-2 h-4 w-4 -translate-y-1/2 text-slate-500 dark:text-slate-400"
+                  className="pointer-events-none absolute top-1/2 left-2 h-4 w-4 -translate-y-1/2"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
+                  style={{ color: 'var(--text-secondary)' }}
                 >
                   <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="2" />
                   <path
@@ -140,21 +157,28 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                         type="button"
                         onClick={() => toggleTag(t)}
                         aria-pressed={selected}
-                        className={`flex items-center justify-between rounded-md px-2 py-1 text-sm transition-colors ${
-                          selected
-                            ? 'dark:bg-accent/20 text-blue-900 dark:text-white'
-                            : 'text-slate-900 hover:bg-slate-100 dark:text-white dark:hover:bg-white/10'
-                        }`}
+                        className="flex items-center justify-between rounded-md px-2 py-1 text-sm transition-colors"
                         style={
                           selected
-                            ? { backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)' }
-                            : undefined
+                            ? {
+                                backgroundColor:
+                                  'color-mix(in srgb, var(--primary) 20%, transparent)',
+                                color: 'var(--text-primary)',
+                              }
+                            : { color: 'var(--text-primary)' }
                         }
                       >
                         <span className="truncate">{t}</span>
                         <span
-                          className={`ml-3 rounded-full border px-1.5 py-0.5 text-[10px] ${selected ? 'dark:border-accent/60' : 'border-slate-300 text-slate-500 dark:border-white/20 dark:text-slate-400'}`}
-                          style={selected ? { borderColor: 'var(--primary)' } : undefined}
+                          className="ml-3 rounded-full border px-1.5 py-0.5 text-[10px]"
+                          style={
+                            selected
+                              ? { borderColor: 'var(--primary)', color: 'var(--text-primary)' }
+                              : {
+                                  borderColor: 'var(--border-strong)',
+                                  color: 'var(--text-secondary)',
+                                }
+                          }
                         >
                           {count}
                         </span>
@@ -162,7 +186,7 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                     );
                   })}
                   {visibleTags.length === 0 && (
-                    <div className="px-2 py-2 text-sm text-slate-500 dark:text-slate-400">
+                    <div className="px-2 py-2 text-sm" style={{ color: 'var(--text-secondary)' }}>
                       No matches
                     </div>
                   )}
@@ -174,14 +198,24 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                   <button
                     type="button"
                     onClick={clearAll}
-                    className="rounded-md border border-slate-200/50 px-2 py-1 text-xs text-slate-700 hover:bg-slate-100/80 dark:border-white/20 dark:text-slate-300 dark:hover:bg-white/10"
+                    className="rounded-md border px-2 py-1 text-xs transition-colors hover:opacity-90"
+                    style={{
+                      borderColor: 'var(--border-strong)',
+                      color: 'var(--text-primary)',
+                      backgroundColor: 'var(--surface-2)',
+                    }}
                   >
                     Clear
                   </button>
                   <button
                     type="button"
                     onClick={selectAllVisible}
-                    className="rounded-md border border-slate-200/50 px-2 py-1 text-xs text-slate-700 hover:bg-slate-100/80 dark:border-white/20 dark:text-slate-300 dark:hover:bg-white/10"
+                    className="rounded-md border px-2 py-1 text-xs transition-colors hover:opacity-90"
+                    style={{
+                      borderColor: 'var(--border-strong)',
+                      color: 'var(--text-primary)',
+                      backgroundColor: 'var(--surface-2)',
+                    }}
                   >
                     Select all
                   </button>
@@ -189,8 +223,8 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
-                  className="rounded-md px-3 py-1.5 text-xs font-medium text-white"
-                  style={{ backgroundColor: 'var(--primary)' }}
+                  className="rounded-md px-3 py-1.5 text-xs font-medium"
+                  style={{ backgroundColor: 'var(--primary)', color: 'var(--text-inverse)' }}
                 >
                   Done
                 </button>
@@ -209,18 +243,19 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
                 type="button"
                 onClick={() => toggleTag(t)}
                 aria-pressed={selected}
-                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
-                  selected
-                    ? 'dark:border-accent/60 dark:bg-accent/20 text-blue-900 dark:text-white'
-                    : 'border-slate-200/50 bg-slate-100/80 text-slate-600 hover:bg-slate-200/80 dark:border-white/20 dark:bg-white/10 dark:text-slate-400 dark:hover:bg-white/15'
-                }`}
+                className="rounded-full border px-3 py-1 text-xs transition-colors hover:opacity-90"
                 style={
                   selected
                     ? {
                         borderColor: 'var(--primary)',
-                        backgroundColor: 'color-mix(in srgb, var(--primary) 20%, white)',
+                        backgroundColor: 'color-mix(in srgb, var(--primary) 20%, transparent)',
+                        color: 'var(--text-primary)',
                       }
-                    : undefined
+                    : {
+                        borderColor: 'var(--border-strong)',
+                        backgroundColor: 'var(--surface-2)',
+                        color: 'var(--text-secondary)',
+                      }
                 }
               >
                 {t}
@@ -242,11 +277,11 @@ export default function BlogBrowser({ posts }: BlogBrowserProps) {
       </div>
 
       <div className="flex items-center justify-between">
-        <p className="text-sm text-slate-600 dark:text-slate-400">
+        <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
           Showing {filtered.length} of {posts.length} articles
         </p>
         {activeTags.length > 0 && (
-          <div className="text-xs text-slate-500 dark:text-slate-400">
+          <div className="text-xs" style={{ color: 'var(--text-secondary)' }}>
             Active: {activeTags.join(', ')}
           </div>
         )}
