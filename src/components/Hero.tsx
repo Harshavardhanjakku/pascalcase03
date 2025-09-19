@@ -204,8 +204,8 @@ export default function Hero() {
                         target="_blank"
                         className={`${bandCtaClass} text-white`}
                         style={{
-                          backgroundColor: 'var(--color-brand)',
-                          color: 'var(--color-brand-foreground)',
+                          backgroundColor: 'var(--primary)',
+                          color: 'var(--primary-foreground)',
                         }}
                       >
                         More Info
@@ -213,10 +213,10 @@ export default function Hero() {
                       <Link
                         href="https://appsource.microsoft.com/en-us/product/web-apps/pascalcasesoftwareprivatelimited1662384934323.flowmonitor?ocid=GTMRewards_WhatsNewBlog_flowmonitor_08012024"
                         target="_blank"
-                        className={bandCtaClass}
+                        className={`${bandCtaClass} text-white`}
                         style={{
-                          backgroundColor: 'var(--color-brand)',
-                          color: 'var(--color-brand-foreground)',
+                          backgroundColor: 'var(--primary)',
+                          color: 'var(--primary-foreground)',
                         }}
                       >
                         Download from Microsoft AppSource
